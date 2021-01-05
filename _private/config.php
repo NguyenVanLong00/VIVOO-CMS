@@ -25,15 +25,15 @@ switch ($env) {
     case 'DEV':
         /* DB Configuration */
 
-        $DB_using = false;
+        $DB_using = true;
         $DB_host = 'localhost';
-        $DB_user = '';
+        $DB_user = 'root';
         $DB_pass = '';
-        $DB_name = '';
+        $DB_name = 'shortlink';
 
         /* Website configuaration */
 
-        define('HOME', 'http://localhost');
+        define('HOME', 'http://localhost/shortlink/');
 }
 
 /* Global views */

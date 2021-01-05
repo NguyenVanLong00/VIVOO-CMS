@@ -6,6 +6,7 @@ $description = isset($description) ? $description : $_default_description;
 /* override */
 $description = substr($description, 0, 157) . '...';
 
+require_once('./_private/bundle.php');
 ?>
 
 <!DOCTYPE html>
@@ -16,9 +17,23 @@ $description = substr($description, 0, 157) . '...';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="<?= $description ?>" />
     <meta name="keywords" content="<?= $keywords ?>" />
-    <link rel="stylesheet" href="<?= HOME.'/assets/css/bundle.css' ?>" />
+    <link rel="stylesheet" href="<?= HOME . '/assets/css/bundle.css?v' . rand(1, 1000) ?>" />
     <title><?= $title ?></title>
 </head>
 
 <body>
-    sửa tại ./_private/header.php
+    <header class="fixed-width">
+        <div id="logo">
+            shortlink
+        </div>
+        <div id="nav" active="off">
+            <div id="user"><?php echo substr($_loggedIn['name'], 0, 2); ?></div>
+            <img alt="" src="<?= HOME .'assets/imgs/arrow.svg' ?>" />    
+        </svg>
+            <ul>
+                <li>Your Link</li>
+                <li>Recharge</li>
+                <li style="text-align: end;">Ref Link <br /> <?php echo $_loggedIn['ref_link'] ?></li>
+            </ul>
+        </div>
+    </header>
