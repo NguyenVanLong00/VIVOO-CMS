@@ -183,14 +183,14 @@ input::placeholder {
     }
     svg{
         width:14rem;
-        bottom:16rem;
+        bottom:10rem;
     }
-    #login-acc > div {bottom:14rem}
+    #login-acc > div {bottom:8rem}
     
     #login-fb-gg >div{
         width:60%;
         position:absolute;
-        bottom:30rem;
+        bottom: 22rem;
     }
     #login-fb-gg >div >div {
         width:5rem;
@@ -198,7 +198,7 @@ input::placeholder {
     
     }
     #login-fb-gg  >svg{
-         bottom:22rem;
+         bottom:16rem;
     }
 
 }

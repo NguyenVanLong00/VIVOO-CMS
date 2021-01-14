@@ -11,7 +11,7 @@
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="<?= HOME . '/assets/js/bundle.js?v' . rand(1, 1000) ?>"></script>
+<script type="text/javascript" src="<?= HOME . 'assets/js/bundle.js?v' . rand(1, 1000) ?>"></script>
 </body>
 
 </html>

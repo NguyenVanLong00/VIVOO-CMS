@@ -24,14 +24,13 @@ require_once('./_private/bundle.php');
 <body>
     <header class="fixed-width">
         <div id="logo">
-            shortlink
+            <a href="<?= HOME?>">shortlink</a>
         </div>
         <div id="nav" active="off">
             <div id="user"><?php echo substr($_loggedIn['name'], 0, 2); ?></div>
-            <img alt="" src="<?= HOME .'assets/imgs/arrow.svg' ?>" />    
-        </svg>
+            <img alt="" src="<?= HOME . 'assets/images/arrow.svg' ?>" />
             <ul>
-                <li>Your Link</li>
+                <li><a href="<?= HOME . 'links.php' ?>">Your Links</a></li>
                 <li>Recharge</li>
                 <li style="text-align: end;">Ref Link <br /> <?php echo $_loggedIn['ref_link'] ?></li>
             </ul>

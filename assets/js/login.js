@@ -17,6 +17,7 @@ $(document).ready(function () {
             deg1 = deg1 - 1;
             if (deg1 < 2) clearInterval(anim1);
         }, 10);
+        
     })
     $('#login-fb-gg').mouseleave(() => {
         clearInterval(anim1)
